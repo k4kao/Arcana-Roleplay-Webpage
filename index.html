@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title> Arcana Roleplay</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://cdn.discordapp.com/icons/1113566975499698266/a_8e84332aec512014d37ef988f304d894.gif" alt="Logo" class="logo">
+  <h1>Arcana Roleplay</h1>
+  <nav>
+    <select id="event-menu" onchange="showTimeline(this.value)">
+      <option value="">Rehber</option>
+      <option value="event1">Evrenin Hikayesi</option>
+      <option value="event2">Evren Haritası</option>
+      <option value="event3">Seviyeler ve Potansiyeller</option>
+      
+    </select>
+    <button id="join-server-button" onclick="redirectToServer()">Sunucuya Katıl</button>
+  
+  </nav>
+   
+  </header>
+  <div id="intro-box">
+  <h2>Hoş Geldiniz!</h2>
+  <p>Siteye hoş geldiniz. K4kao tarafından geliştirilen bu site henüz yapım aşamasında. Destekleriniz için teşekkürler!</p>
+</div>
+  
+  <main>
+    <section id="timeline"></section>
+  </main>
+
+  <div id="event-details-overlay">
+    <div id="event-details">
+      <button id="close-button" onclick="closeDetails()">X</button>
+      <h2 id="event-title"></h2>
+      <div id="event-description"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
